@@ -21,5 +21,10 @@ sudo apt install -y curl
 sudo apt install -y tmux
 wget -P ~/ 'https://github.com/axonix-org/linux-settings/raw/main/.tmux.conf'
 
+# Скачивание и настройка alias
+wget -P ~/ 'https://github.com/axonix-org/linux-settings/raw/main/.bash_aliases'
+# Перезапуск .bashrc
+. ~/.bashrc
+
 # Установка git
 sudo apt install -y git
