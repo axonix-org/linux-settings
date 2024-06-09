@@ -17,6 +17,9 @@ sudo apt install -y mc
 # Установка curl
 sudo apt install -y curl
 
+# Установка Vim
+sudo apt install vim
+
 # Установка и настройка tmux
 sudo apt install -y tmux
 wget -P ~/ 'https://github.com/axonix-org/linux-settings/raw/main/.tmux.conf'
@@ -36,3 +39,6 @@ echo 'parse_git_branch() {
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "' >> ~/.bashrc
 # Перезапуск .bashrc
 . ~/.bashrc
+
+# Установка Docker
+curl -sSL https://get.docker.com/ | sh
